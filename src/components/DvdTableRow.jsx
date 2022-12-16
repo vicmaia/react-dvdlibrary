@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DeleteButton from "./DeleteButton";
 
 class DvdTableRow extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class DvdTableRow extends Component {
           <td>{this.state.releaseYear}</td>
           <td>{this.state.director}</td>
           <td>{this.state.rating}</td>
-          <td>Edit | Delete</td>
+          <td>Edit | <DeleteButton dvdId={this.props.id} /></td>
         </tr>
       </>
     );
