@@ -1,0 +1,149 @@
+/* 
+Color Scheme: 
+- dark red: #5d001e
+- gray: #e3e2df
+- light pink: #e3afbc
+- medium red: #9a1750
+- bright red/pink: #ee4c7c
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+.App {
+  font-family: "Arial", serif;
+  text-align: center;
+  background-color: #AC94F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #120043;
+  color: white;
+  font-size: 4em;
+  margin-top: 0;
+  padding: 30px 0;
+  max-width: 1240px;
+  width: 100vw;
+}
+
+button {
+  cursor: pointer;
+  background-color: #120043;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 1.1em;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: #120043;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  width: 100vw;
+  padding: 1em;
+  border-bottom: 3px solid #120043;
+}
+
+#search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  width: 60vw;
+}
+
+.dvd-table {
+  margin: 20px auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.dvd-table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 10px;
+  font-size: 1.1em;
+}
+
+.dvd-table th {
+  background-color: #120043;
+  color: white;
+}
+
+.dvd-table tr:nth-child(odd) {
+  background-color: #dcd0ff;
+}
+
+.dvd-title:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+#search-validation {
+  margin: 10px auto;
+  background-color: #ee4c7d9d;
+  padding: 3px 0;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#dvd-form-container {
+  max-width: 750px;
+  width: 90vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#dvd-form {
+  max-width: 500px;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#dvd-form .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+.dvd-form-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.dvd-form-row label {
+  font-size: 1.3em;
+}
+
+.dvd-form-row input,
+select,
+textarea {
+  font-size: 1.3em;
+}
